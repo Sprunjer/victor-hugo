@@ -3,13 +3,48 @@ title: 'tech'
 date: 2018-11-14T19:02:50-07:00
 draft: false
 ---
+<title>Example</title>
+<style>
+#grid {
+  display: grid;
+  grid-template-rows: 50vh repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+#grid > div {
+  color: white;
+  font-size: 4vw;
+  padding: 10px;
+  background: gold;
+}
+#grid > div:nth-child(1) {
+  grid-column: span 4;
+  }
+#grid > div:nth-child(2) {
+  grid-row: span 4;
+  }
+#grid > div:nth-child(4) {
+  grid-row: span 2;
+  }
+#grid > div:nth-child(5) {
+  grid-row: span 3;
+  }
+#grid > div:nth-child(6) {
+  grid-row: span 3;
+  }
+</style>
+<body id="grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+</body>
 
-# [Victor Hugo](https://github.com/netlify-templates/victor-hugo)
 
-## A Hugo boilerplate for creating truly epic websites
-
-<img src="https://d33wubrfki0l68.cloudfront.net/30790d6888bd8af863fb2b5c33a7f337cdbda243/4e867/images/hugo-logo-wide.svg" style="width: 40%" />
-
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline. Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
-
-## Enjoy!! 😸
